@@ -1,0 +1,30 @@
+<div class="middle">
+<div class="about">
+  <img class="aboutimg" src="" alt="">
+<p>
+  Para uber mich
+</p>
+
+</div>
+
+<h2 class="projektheading">Meine Projekte:</h2>
+<div class="container">
+
+    <mat-card matTooltip="Download" matTooltipClass="tooltip-download" class="card item" *ngFor="let projekt of projekte;index as i"  (click)="clickProject(i)">
+      <mat-card-header>
+        <mat-card-title>{{projekt.name}}</mat-card-title>
+      </mat-card-header>
+
+      <img mat-card-image src="{{projekt.screenshot}}" alt="Screenshot" class="card-img-top">
+      <mat-card-content>
+      <h5 class="card-title"></h5>
+        <p class="card-text">{{projekt.des}}</p>
+        <div class="list">
+          <mat-chip-list>
+            <mat-chip class="chip" *ngFor="let tech of projekt.tech">{{tech}}</mat-chip>
+          </mat-chip-list></div>
+      </mat-card-content>
+    </mat-card>
+
+</div>
+</div>

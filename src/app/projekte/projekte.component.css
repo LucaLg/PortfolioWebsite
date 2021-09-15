@@ -1,0 +1,53 @@
+.middle{
+  background-color: rgba(34,42,53,0.92);
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.about{
+  display:flex;
+  justify-content: space-evenly;
+
+  background-color: #1e1f22;
+}
+
+.about p{
+  margin-top: 5vh;
+}
+.projektheading{
+  margin-top: 1vw;
+  text-decoration: underline;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+
+}
+.item{
+  flex: 0 0 25em;
+}
+.card{
+  margin-top: 2vh;
+  background-color: #1e1f22;
+  color: white;
+}
+.card-img-top{
+  height: 80%;
+}
+.card:hover{
+  background: #999999;
+  cursor: pointer;
+}
+.chip{
+  background-color: #18d9c4;
+}
+.tooltip-download {
+  background: #b71c1c;
+}
+@media (max-height: 767px) {
+  .card-text {
+    display: none;
+  }
+}
+
