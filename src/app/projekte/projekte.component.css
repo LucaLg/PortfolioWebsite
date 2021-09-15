@@ -7,7 +7,7 @@
   display:flex;
   justify-content: space-evenly;
 
-  background-color: #1e1f22;
+
 }
 
 .about p{
@@ -15,7 +15,7 @@
 }
 .projektheading{
   margin-top: 1vw;
-  text-decoration: underline;
+
 }
 .container {
   display: flex;
