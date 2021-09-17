@@ -4,10 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ProjekteComponent } from './projekte/projekte.component';
 import { ProjektComponent } from './projekte/projekt/projekt.component';
-import { LebenslaufComponent } from './lebenslauf/lebenslauf.component';
+
 
 import { NavbarComponent } from './navbar/navbar.component';
-import { LoginComponent } from './login/login.component';
+
 import {ReactiveFormsModule} from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,10 +26,10 @@ const routes:Routes = [
     AppComponent,
     ProjekteComponent,
     ProjektComponent,
-    LebenslaufComponent,
+
 
     NavbarComponent,
-    LoginComponent
+
   ],
   imports: [
     BrowserModule,
