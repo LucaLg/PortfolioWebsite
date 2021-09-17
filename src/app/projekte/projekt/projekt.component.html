@@ -1,11 +1,20 @@
-<div class="container">
-  <div>
-  <h1>{{projekt.name}}</h1>
-  <img src="{{projekt.screenshot}}" alt="">
+<div class="containerProjekt">
+
+  <h1>{{projekt.name}} <button class="projektButtons" (click)="openDemo(projekt.githubLink)"><mat-icon>download</mat-icon></button>
+    <button class="projektButtons"*ngIf="projekt.demoLink !=null" (click)="openDemo(projekt.demoLink)"><mat-icon>play_arrow</mat-icon></button></h1>
+  <img class="projektImg" src="{{projekt.screenshot}}" alt="">
 
 
-  <a href="{{projekt.githubLink}}">Download!</a>
+  <div class="list">
+    <mat-chip-list>
+      <mat-chip *ngFor="let tech of projekt.tech">{{tech}}</mat-chip>
+
+    </mat-chip-list>
+
+
+
   </div>
-  <p>{{projekt.des}}</p>
+
+  <p id="description">{{projekt.longdes}}</p>
 </div>
 

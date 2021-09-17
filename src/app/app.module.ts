@@ -14,12 +14,10 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatCardModule} from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatIconModule} from '@angular/material/icon';
 const routes:Routes = [
-  {path: 'projekt/:id', component:ProjektComponent},
+  {path: 'projekte/:id', component:ProjektComponent},
   { path: 'projekte',component: ProjekteComponent},
-  {path : 'login' ,component:LoginComponent},
-  {path : 'lebenslauf',component:LebenslaufComponent},
-
   { path: '**' ,component:ProjekteComponent}
 ]
 // @ts-ignore
@@ -40,7 +38,8 @@ const routes:Routes = [
     NoopAnimationsModule,
     MatChipsModule,
     MatCardModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatIconModule
 
   ],
   providers: [],

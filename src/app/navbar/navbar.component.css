@@ -1,5 +1,5 @@
 nav{
-  background-color: #18d9c4;
+  background-color: #5688ab;
 }
 .links{
   margin-left:auto;
@@ -11,4 +11,18 @@ nav{
 }
 .link:hover{
   cursor: pointer;
+}
+.navbar-brand{
+
+  text-underline-offset: 5px;
+  text-decoration: underline;
+
+  color: black;
+  margin-left: 1vw;
+}
+span{
+  color: rgba(22, 40, 44, 0.66);
+}
+.navbar-brand:hover{
+  color: white;
 }

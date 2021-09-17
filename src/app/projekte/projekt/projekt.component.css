@@ -1,15 +1,43 @@
-.container{
-  display: flex;
-  align-content: space-evenly;
-  align-items: baseline;
-  margin-left: 10vw;
-  margin-right: 25vw;
-  margin-top: 5vh;
+h1{
+  text-align: center;
 }
+
 .list{
+
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 1vh;
 }
-img{
-  width: 80%;
-  height: 80%;
+.projektImg{
+
+  width: 40%;
+  height: 40%;
 }
+
+#description{
+  margin-top: 2vh;
+  width: 60%;
+
+}
+.projektButtons {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #20c997;
+}
+
+.projektButtons:hover {
+  color: #113726;
+
+}
+.containerProjekt{
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+

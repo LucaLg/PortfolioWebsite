@@ -20,5 +20,7 @@ export class ProjektComponent implements OnInit {
     ;
     this.projekt = this.projektService.projekte[this.params];
   }
-
+  openDemo(url:string){
+    window.open(url);
+  }
 }

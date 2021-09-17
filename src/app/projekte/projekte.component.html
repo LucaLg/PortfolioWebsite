@@ -1,31 +1,34 @@
-<div class="middle">
+
 <div class="about">
-  <h1>Luca Gnoth</h1>
-  <img class="aboutimg" src="" alt="">
-<p>
+  <div class="hai">
+    <h1>Hi,ich bin Luca </h1>
+    <img class="aboutimg" src="../../assets/img/Port.jpg" alt="">
+    <div class="mobileLinks">
+      <a href="https://github.com/LucaLg" ><img src="../../assets/img/GitHub-Mark-32px.png" alt="GitHub"> </a>
+      <a href="https://www.linkedin.com/in/luca-gn-842556168/" ><img src="../../assets/img/icons8-linkedin-32.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+<div class="pab">
+  <p id="shortDes">
+    Informatik Student and Web Developer from Lünen, DE.
+  </p>
+  <button id="projekteButton" (click)="scrollProjectes()">Projekte <mat-icon >arrow_right_alt</mat-icon></button>
+</div>
 
-</p>
 
 </div>
 
-<h2 class="projektheading">Meine Projekte:</h2>
-<div class="container">
 
-    <mat-card matTooltip="Download" matTooltipClass="tooltip-download" class="card item" *ngFor="let projekt of projekte;index as i"  (click)="clickProject(i)">
-      <mat-card-header>
-        <mat-card-title>{{projekt.name}}</mat-card-title>
-      </mat-card-header>
+<div class="container" id="projekt">
+  <h2 class="projektheading">Projekte</h2>
+    <div class="projekt"  *ngFor="let projekt of projekte;index as i"  [routerLink]="['../projekte/',i]">
+      <img  src="{{projekt.screenshot}}" alt="Screenshot" class="projekt-img">
 
-      <img mat-card-image src="{{projekt.screenshot}}" alt="Screenshot" class="card-img-top">
-      <mat-card-content>
-      <h5 class="card-title"></h5>
-        <p class="card-text">{{projekt.des}}</p>
-        <div class="list">
-          <mat-chip-list>
-            <mat-chip class="chip" *ngFor="let tech of projekt.tech">{{tech}}</mat-chip>
-          </mat-chip-list></div>
-      </mat-card-content>
-    </mat-card>
 
-</div>
+      <div class=" shadow">
+        <h3 class="projektTitle">{{projekt.name}} <mat-icon >arrow_right_alt</mat-icon> </h3>
+        <p class="projektDes">{{projekt.des}}</p>
+      </div>
+    </div>
+
 </div>
