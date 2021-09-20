@@ -34,7 +34,7 @@ const routes:Routes = [
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes , { scrollPositionRestoration: 'enabled' }),
     NoopAnimationsModule,
     MatChipsModule,
     MatCardModule,

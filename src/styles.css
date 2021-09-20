@@ -3,6 +3,8 @@
 body{
   background-color: rgba(34,42,53,0.92);
 
+  background: rgb(34,42,53);
+  background: radial-gradient(circle, rgba(34,42,53,1) 0%, rgba(71,70,70,1) 100%);
   color: white;
 }
 

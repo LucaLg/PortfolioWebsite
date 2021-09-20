@@ -5,8 +5,8 @@ h1{
 .list{
 
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding-left: 10em;
   margin-top: 1vh;
 }
 .projektImg{
@@ -16,8 +16,12 @@ h1{
 }
 
 #description{
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2vh;
-  width: 60%;
+  max-width: 70ch;
+  font-weight: lighter;
+  font-size: large;
 
 }
 .projektButtons {
@@ -25,11 +29,11 @@ h1{
   border: none;
   cursor: pointer;
   text-decoration: none;
-  color: #20c997;
+  color: white;
 }
 
 .projektButtons:hover {
-  color: #113726;
+  color: #20c997;
 
 }
 .containerProjekt{
@@ -38,6 +42,6 @@ h1{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+ padding: 0 2em;
 }
 
