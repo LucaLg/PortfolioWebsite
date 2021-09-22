@@ -1,28 +1,32 @@
 
-.hai{
+.hai {
   margin-top: 2vh;
   text-align: center;
 }
-.aboutimg{
+
+.aboutimg {
 
   margin-top: 1vh;
   height: 20rem;
   width: 20rem;
   border-radius: 500px;
 }
-.about{
+
+.about {
   margin-top: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#shortDes{
+
+#shortDes {
   padding-top: 5vh;
   margin-left: 10vw;
   max-width: 30ch;
   padding-right: 2em;
 }
-#projekteButton{
+
+#projekteButton {
   height: 5vh;
   width: 10vw;
   margin-left: 10vw;
@@ -32,23 +36,27 @@
 
   background-color: white;
 }
-#projekteButton>mat-icon{
- vertical-align: middle;
+
+#projekteButton > mat-icon {
+  vertical-align: middle;
 }
-.projektheading{
+
+.projektheading {
   margin-top: 1vw;
   text-align: center;
 }
-.linksImg{
+
+.linksImg {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding:0 2em;
+  padding: 0 2em;
   margin: 1em 2em;
 
 }
-.linksImg>a{
+
+.linksImg > a {
   max-height: 5ch;
   color: white;
   text-underline: none;
@@ -57,8 +65,7 @@
 }
 
 
-
-.projekt{
+.projekt {
   margin-top: 2vh;
   margin-bottom: 20vh;
 
@@ -66,29 +73,33 @@
   height: 30em;
   position: relative;
 }
-.projektTitle{
+
+.projektTitle {
   font-weight: bold;
 
   color: #ffffff;
   position: absolute;
-  top:40%;
-  left:15%;
+  top: 40%;
+  left: 15%;
   opacity: 1;
   text-align: center;
 
 }
-.projektTitle>mat-icon{
+
+.projektTitle > mat-icon {
   vertical-align: middle;
 }
-.projektDes{
+
+.projektDes {
   color: #000000;
   position: absolute;
-  top:50%;
-  left:18%;
+  top: 50%;
+  left: 18%;
   opacity: 1;
   width: 50%;
 }
-.shadow{
+
+.shadow {
   border-radius: 7px;
   position: absolute;
   top: 0;
@@ -101,7 +112,8 @@
   transition: .7s ease;
   background-color: #5c636a;
 }
-.projekt-img{
+
+.projekt-img {
   border-radius: 7px;
   width: 100%;
   height: 100%;
@@ -109,56 +121,71 @@
   filter: drop-shadow(0 0 0.75rem black);
 }
 
-.projekt:hover .shadow{
+.projekt:hover .shadow {
 
   opacity: 0.91;
   cursor: pointer;
 
 }
-.container{
+
+.container {
   margin-top: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.mobileLinks{
 
- display: none;
+.mobileLinks {
+
+  display: none;
 }
-.mobileLinks>a{
+
+.mobileLinks > a {
   margin-left: 1vw;
 }
-@media (max-height: 700px), screen and (max-width: 995px){
-  .projekt{
+
+@media (max-height: 700px), screen and (max-width: 995px) {
+  .projekt {
     width: 20em;
     height: 15em;
   }
-  .projektDes{
+
+  .projektDes {
     display: none;
   }
-  #projekteButton{
+
+  #projekteButton {
     width: 20vw;
     height: 10vh;
     font-size: small;
   }
-  .about{
+
+  .about {
     margin-top: 5vh;
 
   }
-  .aboutimg{
+
+  .aboutimg {
     margin-left: 5vw;
   }
-  .container{
-    margin-top:30vh;
+
+  .container {
+    margin-top: 30vh;
   }
-  .mobileLinks{
+
+  .mobileLinks {
     display: revert;
   }
+
+  .aboutimg {
+    margin-right: 2.5em;
+  }
 }
-#projekteButton:hover{
+
+#projekteButton:hover {
   transform: translateY(3px);
   background-color: #20c997;
-  transition:  0.5s;
+  transition: 0.5s;
 }
 

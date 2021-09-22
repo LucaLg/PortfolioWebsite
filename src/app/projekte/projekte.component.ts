@@ -12,32 +12,27 @@ import {ViewportScroller} from '@angular/common';
   encapsulation: ViewEncapsulation.None
 })
 export class ProjekteComponent implements OnInit {
-  hover:boolean;
-  projekte:Projekt[] = new Array();
-  constructor(private projekService:ProjektService,private router:Router,private route:ActivatedRoute,private scroller:ViewportScroller) { }
+  hover: boolean;
+  projekte: Projekt[] = new Array();
+
+  constructor(private projekService: ProjektService, private router: Router, private route: ActivatedRoute, private scroller: ViewportScroller) {
+  }
 
   ngOnInit(): void {
     this.projekte = this.projekService.projekte;
-    //this.projekte = this.shuffleArray(this.projekte);
-  }
-  clickProject(it:number){
-    const url = this.route + '/'+it;
-    console.log(url);
 
-    // console.log(it);
-    // console.log(this.projekte[it].githubLink);
-    //
-    // window.open(this.projekte[it].githubLink);
   }
-  scrollProjectes(){
-    this.scroller.scrollToAnchor("projekt")
+
+  scrollProjectes() {
+    this.scroller.scrollToAnchor('projekt');
   }
-  shuffleArray(arr){
+
+  shuffleArray(arr) {
     let currentIndex = arr.length, randomIndex;
-    while(currentIndex !=0){
-      randomIndex = Math.floor(Math.random()*currentIndex);
+    while (currentIndex != 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
-      [arr[currentIndex],arr[randomIndex]] = [arr[randomIndex],arr[currentIndex]];
+      [arr[currentIndex], arr[randomIndex]] = [arr[randomIndex], arr[currentIndex]];
     }
     return arr;
   }

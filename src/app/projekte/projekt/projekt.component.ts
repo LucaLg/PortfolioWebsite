@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ProjektService} from '../../services/projekt.service';
 import {Projekt} from '../../model/Projekt';
 import {ActivatedRoute, Router} from '@angular/router';
@@ -10,17 +10,22 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./projekt.component.css']
 })
 export class ProjektComponent implements OnInit {
-  projekt:Projekt;
-  constructor(private projektService:ProjektService,private router:Router,private activeRoute:ActivatedRoute) { }
-  params:number;
+  projekt: Projekt;
+
+  constructor(private projektService: ProjektService, private router: Router, private activeRoute: ActivatedRoute) {
+  }
+
+  params: number;
+
   ngOnInit(): void {
-    this.activeRoute.params.subscribe(params =>{
-        this.params  = params['id']
-      })
+    this.activeRoute.params.subscribe(params => {
+      this.params = params['id'];
+    })
     ;
     this.projekt = this.projektService.projekte[this.params];
   }
-  openDemo(url:string){
+
+  openDemo(url: string) {
     window.open(url);
   }
 }

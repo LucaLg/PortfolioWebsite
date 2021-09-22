@@ -1,40 +1,46 @@
-
 <div class="about">
   <div class="hai">
     <h1>Hi, ich bin Luca </h1>
     <img class="aboutimg" src="../../assets/img/Port.jpg" alt="">
     <div class="mobileLinks">
-      <a href="https://github.com/LucaLg" ><img src="../../assets/img/GitHub-Mark-32px.png" alt="GitHub"> </a>
-      <a href="https://www.linkedin.com/in/luca-gn-842556168/" ><img src="../../assets/img/icons8-linkedin-32.png" alt="LinkedIn"></a>
-
+      <a href="https://github.com/LucaLg"><img src="../../assets/img/GitHub-Mark-32px.png" alt="GitHub"> </a>
+      <a href="https://www.linkedin.com/in/luca-gn-842556168/"><img src="../../assets/img/icons8-linkedin-32.png"
+                                                                    alt="LinkedIn"></a>
     </div>
     <div class="linksImg">
-      <a href="https://www.hackerrank.com/lucal_gno">HackerRank <mat-icon [inline]="true">link</mat-icon></a>
-      <a href="https://platform.entwicklerheld.de/publicprofile/f70993ea11fbbe5d8171bbcbe4a0e99e">Entwicklerheld <mat-icon [inline]="true">link</mat-icon></a>
+      <a href="https://www.hackerrank.com/lucal_gno">HackerRank
+        <mat-icon [inline]="true">link</mat-icon>
+      </a>
+      <a href="https://platform.entwicklerheld.de/publicprofile/f70993ea11fbbe5d8171bbcbe4a0e99e">Entwicklerheld
+        <mat-icon [inline]="true">link</mat-icon>
+      </a>
 
     </div>
   </div>
-<div class="pab">
-  <p id="shortDes">
-    Informatik Student and Web Developer from Lünen, DE.
-  </p>
-  <button id="projekteButton" (click)="scrollProjectes()">Projekte <mat-icon >arrow_right_alt</mat-icon></button>
-</div>
-
-
+  <div class="pab">
+    <p id="shortDes">
+      Informatik Student from Lünen, DE.
+    </p>
+    <button id="projekteButton" (click)="scrollProjectes()">Projekte
+      <mat-icon>arrow_right_alt</mat-icon>
+    </button>
+  </div>
 </div>
 
 
 <div class="container" id="projekt">
   <h2 class="projektheading">Projekte</h2>
-    <div class="projekt"  *ngFor="let projekt of projekte;index as i"  [routerLink]="['../projekte/',i]">
-      <img  src="{{projekt.screenshot}}" alt="Screenshot" class="projekt-img">
-
-
-      <div class=" shadow">
-        <h3 class="projektTitle">{{projekt.name}} <mat-icon >arrow_right_alt</mat-icon> </h3>
-        <p class="projektDes">{{projekt.des}}</p>
-      </div>
+  <div class="projekt" *ngFor="let projekt of projekte;index as i" [routerLink]="['../projekte/',i]">
+    <img src="{{projekt.screenshot}}" alt="Screenshot" class="projekt-img">
+    <div class=" shadow">
+      <h3 class="projektTitle">{{projekt.name}}
+        <mat-icon>arrow_right_alt</mat-icon>
+      </h3>
+      <p class="projektDes">{{projekt.des}}</p>
     </div>
+  </div>
 
 </div>
+<a style="color:white;
+           margin-right: 2em;" routerLink="../datenschutz"> Datenschutzerklärung</a>
+<a style="color:white;" routerLink="../impressum">Impressum</a>
