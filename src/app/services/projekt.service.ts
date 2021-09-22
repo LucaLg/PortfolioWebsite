@@ -20,11 +20,11 @@ export class ProjektService {
                           +' dieser kann er andere Nachrichten, und User löschen. Nachrichten und User werden in einer Relationalen Datenbank'
                           +' mit der H2 Engine abgespeichert.'
                         ),
-                        new Projekt("Top-Down Shooter",["C#","Unity","Git"],"Ein 2D Top-Down-Shooter entwickelt in Unity im Rahmen des Fachprojekts. ","../../assets/img/TopDownShooter.png",'https://drive.google.com/file/d/1nEROxPutt1cy8dQK0_oyIHnu0axbr0nr/view?usp=sharing','Der TopDownShooter wurde im Rahmen des Fachprojektes in einer zweier Gruppe entwickelt. Als Basis wurde die Unity Engine'
+                        new Projekt("Top-Down Shooter",["C#","Unity","Git"],"Ein 2D Top-Down-Shooter entwickelt in Unity im Rahmen des Fachprojekts. ","../../assets/img/TopDownShooter.png",'https://github.com/LucaLg/MiniprojektFachprojekt','Der TopDownShooter wurde im Rahmen des Fachprojektes in einer zweier Gruppe entwickelt. Als Basis wurde die Unity Engine'
                           +' genutzt um in C# das Spiel zu entwickeln. Der Spieler kann durch bewegen der Maus zielen und durch klicklen der Maustaste schießen.'
                           +' Das Spiel wurde in verschiedene Bereiche aufgeteilt, sodass jeder Logik Controller nur bestimmte Zuständigkeiten hat. Zum Beispiel '
                           +' kontrolliert die Klasse PlayerController nur die Logik des Spielers. Das zu zu downloadene Projekt kann in der Unity Engine geöffnet werden.','https://lucalg.itch.io/topdownshooter'),
-                        new Projekt("Multiplayer Sidescroller",["C#","Unity","Photon Pun2","Git"],"Entwickelt mit Unity.","../../assets/img/Hauptprojekt.png",'https://drive.google.com/file/d/193tUaqZqSap6H_PPVcqNHJ5t3gxo3qfa/view?usp=sharing','Der 2D Multiplayer Sidescroller wurde im Rahmen des Fachprojekts als Hauptprojekt entwickelt. Wie auch der TopDown Shooter wurde '
+                        new Projekt("Multiplayer Sidescroller",["C#","Unity","Photon Pun2","Git"],"Entwickelt mit Unity.","../../assets/img/Hauptprojekt.png",'https://github.com/LucaLg/Hauptprojekt','Der 2D Multiplayer Sidescroller wurde im Rahmen des Fachprojekts als Hauptprojekt entwickelt. Wie auch der TopDown Shooter wurde '
                           +' das Spiel mittels der Engine Unity in C# programmiert. Der Multiplayer wurde mit der Photon Pun 2 Engine umgesetzt. '
                           +' Beim Starten des Spieles wird automatisch eine Lobby geöffnet die ein andere Spieler joinen kann. Dabei kann eine Lobby maximal'
                           +' zwei Spieler umfassen. Der Spieler kann wie in einem klassischen Sidescroller sich nach links und rechts Bewegen und Springen.'
